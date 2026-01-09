@@ -24,7 +24,7 @@ const characters = ref<Character[]>([
     /||\\
    / || \\`,
     powerLevel: 'OVER 9000!!!',
-    image: '/images/dbz/dbz-goku-1.jpg'
+    image: '/images/dbz/dbz-goku-1.webp'
   },
   {
     name: 'VEGETA',
@@ -38,23 +38,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '8500+',
-    image: '/images/dbz/dbz-vegeta-2.jpg'
-  },
-  {
-    name: 'GOHAN',
-    title: 'The Ultimate Warrior',
-    description: 'Goku\'s son who surpassed all limits!',
-    ascii: `
-    ⭐⭐⭐
-   /|||||\\
-   (^_^)
-    \\═══/
-     |||
-    /||\\
-   / || \\`,
-    powerLevel: '9000+',
-    image: '/images/dbz/dbz-gohan-3.jpg'
+    powerLevel: '54 MILLION!',
+    image: '/images/dbz/dbz-vegeta-2.webp'
   },
   {
     name: 'PICCOLO',
@@ -68,23 +53,53 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '7500+',
-    image: '/images/dbz/dbz-piccolo-4.jpg'
+    powerLevel: '2 MILLION',
+    image: '/images/dbz/dbz-piccolo-3.webp'
   },
   {
-    name: 'TRUNKS',
-    title: 'The Future Warrior',
-    description: 'Time traveler with a sword and attitude!',
+    name: 'BULMA',
+    title: 'The Genius Inventor',
+    description: 'Brilliant scientist and Dragon Ball hunter!',
     ascii: `
-    🗡️🗡️🗡️
+    💡💡💡
    /|||||\\
-   (o_o)
+   (^_^)
     \\═══/
      |||
     /||\\
    / || \\`,
-    powerLevel: '7000+',
-    image: '/images/dbz/dbz-trunks-5.jpg'
+    powerLevel: 'GENIUS IQ!',
+    image: '/images/dbz/dbz-bulma-4.webp'
+  },
+  {
+    name: 'FREEZER',
+    title: 'The Galactic Tyrant',
+    description: 'The most feared villain in the universe!',
+    ascii: `
+    ❄️❄️❄️
+   /▓▓▓▓▓\\
+   (X_X)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '530,000!!!',
+    image: '/images/dbz/dbz-freezer-5.webp'
+  },
+  {
+    name: 'GOHAN',
+    title: 'The Ultimate Warrior',
+    description: 'Goku\'s son who surpassed all limits!',
+    ascii: `
+    ⭐⭐⭐
+   /|||||\\
+   (^_^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '45 MILLION!',
+    image: '/images/dbz/dbz-gohan-10.webp'
   },
   {
     name: 'KRILLIN',
@@ -98,26 +113,11 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '5000+',
-    image: '/images/dbz/dbz-krillin-6.jpg'
+    powerLevel: '1 MILLION!',
+    image: '/images/dbz/dbz-krillin-11.webp'
   },
   {
-    name: 'FRIEZA',
-    title: 'The Galactic Tyrant',
-    description: 'The most feared villain in the universe!',
-    ascii: `
-    ❄️❄️❄️
-   /▓▓▓▓▓\\
-   (X_X)
-    \\═══/
-     |||
-    /||\\
-   / || \\`,
-    powerLevel: '530000!!!',
-    image: '/images/dbz/dbz-frieza-7.jpg'
-  },
-  {
-    name: 'CELL',
+    name: 'CELULA',
     title: 'The Perfect Android',
     description: 'Bio-engineered to be the ultimate life form!',
     ascii: `
@@ -128,23 +128,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: 'PERFECT!!!',
-    image: '/images/dbz/dbz-cell-8.jpg'
-  },
-  {
-    name: 'MAJIN BUU',
-    title: 'The Pink Terror',
-    description: 'Ancient evil with a sweet tooth!',
-    ascii: `
-    🍬🍬🍬
-   /OOOOO\\
-   (^w^)
-    \\═══/
-     |||
-    /||\\
-   / || \\`,
-    powerLevel: 'UNLIMITED!',
-    image: '/images/dbz/dbz-majin buu-9.jpg'
+    powerLevel: '250 MILLION!',
+    image: '/images/dbz/dbz-celula-9.webp'
   },
   {
     name: 'GOTENKS',
@@ -158,23 +143,23 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '8000+',
-    image: '/images/dbz/dbz-gotenks-10.jpg'
+    powerLevel: '65.6 MILLION!',
+    image: '/images/dbz/dbz-gotenks-15.webp'
   },
   {
-    name: 'ANDROID 18',
-    title: 'The Mechanical Warrior',
-    description: 'Cybernetic fighter with unlimited energy!',
+    name: 'TRUNKS',
+    title: 'The Future Warrior',
+    description: 'Time traveler with a sword and attitude!',
     ascii: `
-    🤖🤖🤖
+    🗡️🗡️🗡️
    /|||||\\
-   (-_-)
+   (o_o)
     \\═══/
      |||
     /||\\
    / || \\`,
-    powerLevel: '7000+',
-    image: '/images/dbz/dbz-android 18-11.jpg'
+    powerLevel: '50 MILLION!',
+    image: '/images/dbz/dbz-trunks-16.webp'
   },
   {
     name: 'YAMCHA',
@@ -188,8 +173,113 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '1480+',
-    image: '/images/dbz/dbz-yamcha-12.jpg'
+    powerLevel: '1,980,000',
+    image: '/images/dbz/dbz-yamcha-13.webp'
+  },
+  {
+    name: 'TENSHINHAN',
+    title: 'The Three-Eyed Warrior',
+    description: 'Master of martial arts and the Tri-Beam!',
+    ascii: `
+    👁️👁️👁️
+   /|||||\\
+   (o_o)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '2.4 MILLION!',
+    image: '/images/dbz/dbz-tenshinhan-12.webp'
+  },
+  {
+    name: 'BARDOCK',
+    title: 'Goku\'s Father',
+    description: 'The legendary Saiyan who foresaw the future!',
+    ascii: `
+    🔥🔥🔥
+   /|||||\\
+   (>_<)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '450,000',
+    image: '/images/dbz/dbz-bardock-18.webp'
+  },
+  {
+    name: 'MASTER ROSHI',
+    title: 'The Turtle Hermit',
+    description: 'Ancient martial arts master and teacher!',
+    ascii: `
+    🐢🐢🐢
+   /OOOOO\\
+   (^_^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '500,000',
+    image: '/images/dbz/dbz-master-roshi-17.webp'
+  },
+  {
+    name: 'CHI-CHI',
+    title: 'The Ox-King\'s Daughter',
+    description: 'Goku\'s wife and fierce mother!',
+    ascii: `
+    👸👸👸
+   /|||||\\
+   (^_^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: 'MOM POWER!',
+    image: '/images/dbz/dbz-chi-chi-14.webp'
+  },
+  {
+    name: 'GINYU',
+    title: 'Leader of the Ginyu Force',
+    description: 'Elite mercenary with body-swapping powers!',
+    ascii: `
+    💜💜💜
+   /|||||\\
+   (^_^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '25,000',
+    image: '/images/dbz/dbz-ginyu-8.webp'
+  },
+  {
+    name: 'ZARBON',
+    title: 'Frieza\'s Elite Warrior',
+    description: 'Elegant fighter with a monstrous transformation!',
+    ascii: `
+    👹👹👹
+   /▓▓▓▓▓\\
+   (o_o)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '30,000',
+    image: '/images/dbz/dbz-zarbon-6.webp'
+  },
+  {
+    name: 'DODORIA',
+    title: 'Frieza\'s Brutal Commander',
+    description: 'Pink warrior known for ruthless brutality!',
+    ascii: `
+    💢💢💢
+   /▓▓▓▓▓\\
+   (>_<)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '20,000',
+    image: '/images/dbz/dbz-dodoria-7.webp'
   }
 ])
 
