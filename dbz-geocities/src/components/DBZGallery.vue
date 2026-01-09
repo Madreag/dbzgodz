@@ -366,13 +366,13 @@ const closeModal = () => {
 <style scoped>
 .gallery-section {
   background-color: #FFFFFF;
-  border: 5px solid #FF0000;
+  border: 5px solid #0066CC;
   padding: 20px;
   margin: 20px 0;
 }
 
 .gallery-section h3 {
-  color: #FF0000;
+  color: #0066CC;
   text-align: center;
   font-size: 24px;
   text-decoration: underline;
@@ -388,7 +388,7 @@ const closeModal = () => {
 }
 
 .character-card {
-  background: linear-gradient(135deg, #FFFF00 0%, #FF8800 100%);
+  background: linear-gradient(135deg, #66B3FF 0%, #0099FF 100%);
   border: 4px solid #000000;
   padding: 15px;
   cursor: pointer;
@@ -398,12 +398,12 @@ const closeModal = () => {
 
 .character-card:hover {
   transform: scale(1.05) rotate(-2deg);
-  box-shadow: 8px 8px 0px rgba(255, 0, 0, 0.8);
-  border-color: #FF0000;
+  box-shadow: 8px 8px 0px rgba(0, 102, 204, 0.8);
+  border-color: #0066CC;
 }
 
 .card-header {
-  background-color: #FF0000;
+  background-color: #0066CC;
   color: #FFFFFF;
   padding: 10px;
   text-align: center;
@@ -418,7 +418,7 @@ const closeModal = () => {
   height: 200px;
   overflow: hidden;
   background-color: #000000;
-  border: 3px solid #FFFF00;
+  border: 3px solid #00CCFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -441,9 +441,9 @@ const closeModal = () => {
   text-align: center;
   margin: 15px 0;
   background-color: #000000;
-  color: #00FF00;
+  color: #00CCFF;
   padding: 10px;
-  border: 2px solid #00FF00;
+  border: 2px solid #00CCFF;
   line-height: 1.2;
 }
 
@@ -453,9 +453,9 @@ const closeModal = () => {
   text-align: center;
   margin: 20px 0;
   background-color: #000000;
-  color: #00FF00;
+  color: #00CCFF;
   padding: 20px;
-  border: 3px solid #00FF00;
+  border: 3px solid #00CCFF;
   line-height: 1.2;
 }
 
@@ -464,11 +464,11 @@ const closeModal = () => {
   color: #FFFFFF;
   padding: 10px;
   text-align: center;
-  border: 2px solid #FFFF00;
+  border: 2px solid #00CCFF;
 }
 
 .power-level {
-  color: #FF0000;
+  color: #0099FF;
   font-weight: bold;
   font-size: 20px;
   margin-top: 5px;
@@ -477,19 +477,19 @@ const closeModal = () => {
 
 @keyframes powerPulse {
   0%, 100% {
-    color: #FF0000;
-    text-shadow: 0 0 5px #FF0000;
+    color: #0099FF;
+    text-shadow: 0 0 5px #0099FF;
   }
   50% {
-    color: #FFFF00;
-    text-shadow: 0 0 10px #FFFF00;
+    color: #00CCFF;
+    text-shadow: 0 0 10px #00CCFF;
   }
 }
 
 .gallery-footer {
   margin-top: 20px;
   padding: 15px;
-  background: linear-gradient(to right, #FF0000, #FFFF00);
+  background: linear-gradient(to right, #0066CC, #00CCFF);
   border: 3px dashed #000000;
   text-align: center;
 }
@@ -519,13 +519,13 @@ const closeModal = () => {
 }
 
 .modal-content {
-  background: linear-gradient(135deg, #FFFF00 0%, #FF8800 100%);
-  border: 8px solid #FF0000;
+  background: linear-gradient(135deg, #66B3FF 0%, #0099FF 100%);
+  border: 8px solid #0066CC;
   padding: 30px;
   max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 30px rgba(0, 102, 204, 0.8);
   animation: slideIn 0.3s;
 }
 
@@ -542,7 +542,7 @@ const closeModal = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FF0000;
+  background-color: #0066CC;
   color: #FFFFFF;
   padding: 15px;
   margin: -30px -30px 20px -30px;
@@ -567,12 +567,12 @@ const closeModal = () => {
 }
 
 .close-btn:hover {
-  background-color: #FF0000;
+  background-color: #0066CC;
   transform: scale(1.1);
 }
 
 .modal-body h3 {
-  color: #FF0000;
+  color: #0066CC;
   text-align: center;
   margin-bottom: 15px;
   font-size: 22px;
@@ -583,7 +583,7 @@ const closeModal = () => {
   max-height: 400px;
   overflow: hidden;
   background-color: #000000;
-  border: 5px solid #FF0000;
+  border: 5px solid #0066CC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -608,8 +608,8 @@ const closeModal = () => {
 
 .stats {
   background-color: #000000;
-  color: #00FF00;
-  border: 3px solid #00FF00;
+  color: #00CCFF;
+  border: 3px solid #00CCFF;
   padding: 15px;
   margin-top: 20px;
 }
@@ -620,7 +620,7 @@ const closeModal = () => {
 }
 
 .stats strong {
-  color: #FFFF00;
+  color: #66B3FF;
 }
 
 /* Blinking text */

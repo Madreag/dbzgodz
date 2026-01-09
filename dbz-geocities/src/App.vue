@@ -38,9 +38,9 @@ onMounted(() => {
     </center>
 
     <!-- Main Content Area with Frames -->
-    <table border="5" cellpadding="10" cellspacing="5" bgcolor="#000080" width="100%">
+    <table border="5" cellpadding="10" cellspacing="5" bgcolor="#000066" width="100%">
       <tr>
-        <td bgcolor="#FF0000" width="200" valign="top">
+        <td bgcolor="#0066CC" width="200" valign="top">
           <!-- Left Sidebar -->
           <div class="sidebar">
             <h2>🔥 NAVIGATION 🔥</h2>
@@ -64,7 +64,7 @@ onMounted(() => {
           </div>
         </td>
 
-        <td bgcolor="#FFFF00" valign="top">
+        <td bgcolor="#CCE6FF" valign="top">
           <!-- Main Content -->
           <div class="main-content">
             <center>
@@ -74,7 +74,7 @@ onMounted(() => {
             </center>
 
             <marquee behavior="scroll" direction="up" height="100" scrollamount="2">
-              <p style="color: red; font-size: 20px;">
+              <p style="color: #0066CC; font-size: 20px;">
                 🌟 NEW! Check out my DBZ picture gallery! 🌟
               </p>
             </marquee>
@@ -133,7 +133,7 @@ onMounted(() => {
           </div>
         </td>
 
-        <td bgcolor="#00FF00" width="200" valign="top">
+        <td bgcolor="#99CCFF" width="200" valign="top">
           <!-- Right Sidebar -->
           <div class="sidebar">
             <h2>🎵 MIDI PLAYER 🎵</h2>
@@ -200,8 +200,8 @@ onMounted(() => {
 body {
   background-color: #000080;
   background-image:
-    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,0,.1) 10px, rgba(255,255,0,.1) 20px),
-    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,0,255,.1) 10px, rgba(255,0,255,.1) 20px);
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,150,255,.1) 10px, rgba(0,150,255,.1) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,100,200,.1) 10px, rgba(0,100,200,.1) 20px);
   font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
   color: #000000;
 }
@@ -212,36 +212,35 @@ body {
 }
 
 .header {
-  background: linear-gradient(90deg, #FF0000, #FFFF00, #00FF00, #00FFFF, #0000FF, #FF00FF);
+  background: linear-gradient(90deg, #0066CC, #0099FF, #00CCFF, #0099FF, #0066CC);
   padding: 20px;
   border: 5px solid #000000;
-  box-shadow: 5px 5px 0px #FF0000;
+  box-shadow: 5px 5px 0px #003366;
 }
 
 .title {
   color: #FFFFFF;
   text-shadow:
     3px 3px 0 #000000,
-    -1px -1px 0 #FF0000,
-    1px -1px 0 #FF0000,
-    -1px 1px 0 #FF0000,
-    1px 1px 0 #FF0000;
+    -1px -1px 0 #0066CC,
+    1px -1px 0 #0066CC,
+    -1px 1px 0 #0066CC,
+    1px 1px 0 #0066CC;
   font-size: 2.5em;
   text-align: center;
-  animation: rainbow 3s infinite;
+  animation: blueGlow 3s infinite;
 }
 
-@keyframes rainbow {
-  0% { color: #FF0000; }
-  20% { color: #FFFF00; }
-  40% { color: #00FF00; }
-  60% { color: #00FFFF; }
-  80% { color: #0000FF; }
-  100% { color: #FF00FF; }
+@keyframes blueGlow {
+  0% { color: #FFFFFF; }
+  25% { color: #00CCFF; }
+  50% { color: #0099FF; }
+  75% { color: #00CCFF; }
+  100% { color: #FFFFFF; }
 }
 
 .construction-text {
-  color: #FF0000;
+  color: #0066CC;
   font-size: 24px;
   font-weight: bold;
   text-decoration: blink;
@@ -257,7 +256,7 @@ body {
   color: #FFFFFF;
   background-color: #000000;
   padding: 5px;
-  border: 2px solid #FFFF00;
+  border: 2px solid #00CCFF;
   display: inline-block;
 }
 
@@ -275,7 +274,7 @@ table {
   color: #FFFFFF;
   background-color: #000000;
   padding: 5px;
-  border: 3px solid #FFFF00;
+  border: 3px solid #00CCFF;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -287,7 +286,7 @@ table {
 
 .nav-menu li {
   margin: 10px 0;
-  background-color: #FFFF00;
+  background-color: #66B3FF;
   border: 2px solid #000000;
   padding: 5px;
 }
@@ -300,8 +299,8 @@ table {
 }
 
 .nav-menu a:hover {
-  color: #FF0000;
-  background-color: #00FFFF;
+  color: #003366;
+  background-color: #99CCFF;
 }
 
 .webring {
@@ -323,7 +322,7 @@ table {
 }
 
 .section-title {
-  background: linear-gradient(to right, #FF0000, #FFFF00);
+  background: linear-gradient(to right, #0066CC, #00CCFF);
   color: #FFFFFF;
   padding: 15px;
   border: 5px ridge #000000;
@@ -345,7 +344,7 @@ table {
 }
 
 .content-section h3 {
-  color: #FF0000;
+  color: #0066CC;
   text-decoration: underline;
   margin-bottom: 10px;
 }
@@ -358,17 +357,17 @@ table {
 .character-list li {
   margin: 10px 0;
   padding: 10px;
-  background: linear-gradient(to right, #FFFF00, #FFFFFF);
-  border-left: 5px solid #FF0000;
+  background: linear-gradient(to right, #99CCFF, #FFFFFF);
+  border-left: 5px solid #0066CC;
 }
 
 .character-list strong {
-  color: #FF0000;
+  color: #0066CC;
   font-size: 1.2em;
 }
 
 .awards {
-  background-color: #FFFF00;
+  background-color: #99CCFF;
   border: 3px double #000000;
   padding: 10px;
   margin: 10px 0;
@@ -382,7 +381,7 @@ table {
 
 .links li {
   margin: 5px 0;
-  background-color: #FFFF00;
+  background-color: #99CCFF;
   padding: 5px;
   border: 1px solid #000000;
 }
@@ -394,10 +393,10 @@ table {
 
 .banner {
   background-color: #000000;
-  color: #00FF00;
+  color: #00CCFF;
   padding: 10px;
   margin-top: 20px;
-  border: 2px solid #00FF00;
+  border: 2px solid #00CCFF;
   text-align: center;
 }
 
@@ -409,7 +408,7 @@ table {
 }
 
 .footer a {
-  color: #FFFF00;
+  color: #00CCFF;
 }
 
 /* Blinking text effect */
@@ -430,12 +429,12 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: #6666CC;
 }
 
 a:hover {
-  color: #FF0000;
-  background-color: #FFFF00;
+  color: #003366;
+  background-color: #99CCFF;
 }
 
 /* Marquee styling */
