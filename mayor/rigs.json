@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "rigs": {}
+  "rigs": {
+    "dbzgodz": {
+      "git_url": "git@github.com:Madreag/dbzgodz.git",
+      "added_at": "2026-01-08T18:08:11.630771959-07:00",
+      "beads": {
+        "repo": "",
+        "prefix": "hq-crew"
+      }
+    }
+  }
 }
