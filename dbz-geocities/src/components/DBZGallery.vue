@@ -7,6 +7,7 @@ interface Character {
   description: string
   ascii: string
   powerLevel: string
+  image: string
 }
 
 const characters = ref<Character[]>([
@@ -22,7 +23,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: 'OVER 9000!!!'
+    powerLevel: 'OVER 9000!!!',
+    image: '/images/dbz/dbz-goku-1.jpg'
   },
   {
     name: 'VEGETA',
@@ -36,7 +38,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '8500+'
+    powerLevel: '8500+',
+    image: '/images/dbz/dbz-vegeta-2.jpg'
   },
   {
     name: 'GOHAN',
@@ -50,7 +53,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '9000+'
+    powerLevel: '9000+',
+    image: '/images/dbz/dbz-gohan-3.jpg'
   },
   {
     name: 'PICCOLO',
@@ -64,7 +68,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '7500+'
+    powerLevel: '7500+',
+    image: '/images/dbz/dbz-piccolo-4.jpg'
   },
   {
     name: 'TRUNKS',
@@ -78,7 +83,8 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '7000+'
+    powerLevel: '7000+',
+    image: '/images/dbz/dbz-trunks-5.jpg'
   },
   {
     name: 'KRILLIN',
@@ -92,7 +98,98 @@ const characters = ref<Character[]>([
      |||
     /||\\
    / || \\`,
-    powerLevel: '5000+'
+    powerLevel: '5000+',
+    image: '/images/dbz/dbz-krillin-6.jpg'
+  },
+  {
+    name: 'FRIEZA',
+    title: 'The Galactic Tyrant',
+    description: 'The most feared villain in the universe!',
+    ascii: `
+    ❄️❄️❄️
+   /▓▓▓▓▓\\
+   (X_X)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '530000!!!',
+    image: '/images/dbz/dbz-frieza-7.jpg'
+  },
+  {
+    name: 'CELL',
+    title: 'The Perfect Android',
+    description: 'Bio-engineered to be the ultimate life form!',
+    ascii: `
+    🦠🦠🦠
+   /▓▓▓▓▓\\
+   (O_O)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: 'PERFECT!!!',
+    image: '/images/dbz/dbz-cell-8.jpg'
+  },
+  {
+    name: 'MAJIN BUU',
+    title: 'The Pink Terror',
+    description: 'Ancient evil with a sweet tooth!',
+    ascii: `
+    🍬🍬🍬
+   /OOOOO\\
+   (^w^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: 'UNLIMITED!',
+    image: '/images/dbz/dbz-majin buu-9.jpg'
+  },
+  {
+    name: 'GOTENKS',
+    title: 'The Fusion Warrior',
+    description: 'Goten + Trunks = MAXIMUM POWER!',
+    ascii: `
+    👥👥👥
+   /|||||\\
+   (^o^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '8000+',
+    image: '/images/dbz/dbz-gotenks-10.jpg'
+  },
+  {
+    name: 'ANDROID 18',
+    title: 'The Mechanical Warrior',
+    description: 'Cybernetic fighter with unlimited energy!',
+    ascii: `
+    🤖🤖🤖
+   /|||||\\
+   (-_-)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '7000+',
+    image: '/images/dbz/dbz-android 18-11.jpg'
+  },
+  {
+    name: 'YAMCHA',
+    title: 'The Desert Bandit',
+    description: 'Former bandit turned Z-Fighter!',
+    ascii: `
+    🐺🐺🐺
+   /|||||\\
+   (^_^)
+    \\═══/
+     |||
+    /||\\
+   / || \\`,
+    powerLevel: '1480+',
+    image: '/images/dbz/dbz-yamcha-12.jpg'
   }
 ])
 
@@ -124,7 +221,14 @@ const closeModal = () => {
         <div class="card-header">
           ⭐ {{ character.name }} ⭐
         </div>
-        <pre class="ascii-art">{{ character.ascii }}</pre>
+        <div class="character-image-container">
+          <img
+            :src="character.image"
+            :alt="character.name"
+            class="character-image"
+            loading="lazy"
+          />
+        </div>
         <div class="card-footer">
           <p>Power Level:</p>
           <p class="power-level">{{ character.powerLevel }}</p>
@@ -141,7 +245,13 @@ const closeModal = () => {
         </div>
         <div class="modal-body">
           <h3>{{ selectedCharacter.title }}</h3>
-          <pre class="ascii-art-large">{{ selectedCharacter.ascii }}</pre>
+          <div class="modal-image-container">
+            <img
+              :src="selectedCharacter.image"
+              :alt="selectedCharacter.name"
+              class="modal-character-image"
+            />
+          </div>
           <p class="description">{{ selectedCharacter.description }}</p>
           <div class="stats">
             <p><strong>Power Level:</strong> {{ selectedCharacter.powerLevel }}</p>
@@ -211,6 +321,28 @@ const closeModal = () => {
   font-size: 18px;
   border: 2px solid #000000;
   margin-bottom: 10px;
+}
+
+.character-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #000000;
+  border: 3px solid #FFFF00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.character-card:hover .character-image {
+  transform: scale(1.1);
 }
 
 .ascii-art {
@@ -354,6 +486,25 @@ const closeModal = () => {
   text-align: center;
   margin-bottom: 15px;
   font-size: 22px;
+}
+
+.modal-image-container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  background-color: #000000;
+  border: 5px solid #FF0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-character-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .description {
