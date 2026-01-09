@@ -42,7 +42,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "export PATH=\"$HOME/go/bin:$HOME/bin:$PATH\" && gt costs record"
+            "command": "export PATH=\"$HOME/go/bin:$HOME/bin:$PATH\" && if [ -n \"$TMUX\" ]; then SESSION=$(tmux display-message -p '#S'); gt costs record --session \"$SESSION\"; fi"
           }
         ]
       }
